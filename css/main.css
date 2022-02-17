@@ -1,3 +1,89 @@
+main {
+  grid-area: main;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: auto;
+  margin: 5%; }
+  main .mainProd img {
+    flex-wrap: wrap;
+    margin: 10px;
+    height: 20rem;
+    width: 20rem; }
+  main form {
+    width: 700px;
+    height: 300px; }
+    main form .btn {
+      width: 15%;
+      border: 0.3rem solid black;
+      font-size: 2rem; }
+  main .form {
+    padding: 2%;
+    color: black;
+    background-color: #f3dfa2;
+    font-size: 2.5rem; }
+  main .formName {
+    margin: 10px; }
+    main .formName input {
+      height: 40px;
+      width: 100%;
+      padding: 10px;
+      margin: 0;
+      box-sizing: border-box; }
+  main .remeras img {
+    margin: 10px;
+    width: 30rem;
+    height: 30rem; }
+  main .remeras p {
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+    background-color: #7ebdc2; }
+  main .zapatillas img {
+    margin: 10px;
+    width: 30rem;
+    height: 30rem; }
+  main .zapatillas p {
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+    background-color: #7ebdc2; }
+  main .texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: white;
+    letter-spacing: 0.1rem; }
+  main .contImgSlog {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    height: 100vh; }
+  main .sizeTextCard {
+    font-size: 2.5rem;
+    text-align: center; }
+  main .sizeTextPrice {
+    font-size: 2rem;
+    text-align: center; }
+  main .marginCard {
+    display: flex;
+    align-items: flex-start; }
+
+footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center; }
+  footer .fooContacto {
+    margin: 15%; }
+  footer p {
+    font-size: 2rem;
+    margin: 5%;
+    background-color: #7ebdc2;
+    color: black; }
+
+/*extends*/
 * {
   margin: 0;
   padding: 0;
@@ -44,77 +130,6 @@ body {
           font-size: 3rem;
           background-color: #7ebdc2;
           font-weight: 600; }
-    body .contenedor main {
-      grid-area: main;
+    body .contenedor .navProducts {
       display: flex;
-      flex-direction: row;
-      justify-content: center;
-      width: auto;
-      margin: 5%; }
-      body .contenedor main .mainProd img {
-        flex-wrap: wrap;
-        margin: 10px;
-        height: 20rem;
-        width: 20rem; }
-      body .contenedor main form {
-        width: 700px;
-        height: 300px; }
-        body .contenedor main form .btn {
-          width: 15%;
-          border: 0.3rem solid black;
-          font-size: 2rem; }
-      body .contenedor main .form {
-        padding: 2%;
-        color: black;
-        background-color: #f3dfa2;
-        font-size: 2.5rem; }
-      body .contenedor main .formName {
-        margin: 10px; }
-        body .contenedor main .formName input {
-          height: 40px;
-          width: 100%;
-          padding: 10px;
-          margin: 0;
-          box-sizing: border-box; }
-      body .contenedor main .remeras img {
-        margin: 10px;
-        width: 30rem;
-        height: 30rem; }
-      body .contenedor main .remeras p {
-        font-size: 2rem;
-        text-align: center;
-        color: black;
-        background-color: #7ebdc2; }
-      body .contenedor main .zapatillas img {
-        margin: 10px;
-        width: 30rem;
-        height: 30rem; }
-      body .contenedor main .zapatillas p {
-        font-size: 2rem;
-        text-align: center;
-        color: black;
-        background-color: #7ebdc2; }
-      body .contenedor main .texto {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 3rem;
-        color: white;
-        letter-spacing: 0.1rem; }
-      body .contenedor main .contImgSlog {
-        position: relative;
-        display: inline-block;
-        text-align: center;
-        height: 100vh; }
-    body .contenedor footer {
-      grid-area: footer;
-      display: flex;
-      justify-content: center; }
-      body .contenedor footer .fooContacto {
-        margin: 15%; }
-      body .contenedor footer p {
-        font-size: 2rem;
-        margin: 5%;
-        background-color: #7ebdc2;
-        color: black; }
+      position: relative; }

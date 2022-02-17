@@ -1,10 +1,9 @@
 @import "variables";
+@import "main";
+@import "footer";
+@import "extends";
 
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Amatic SC';
-}
+
 
 body {
     background-color: $color-body;
@@ -64,118 +63,12 @@ body {
                     }
                 }
             }
+            
         }
-
-        main {
-            grid-area: main;
+        .navProducts{
             display: flex;
-            flex-direction: row;
-            justify-content: center;
-            width: auto;
-            margin: 5%;
-
-            .mainProd {
-                img {
-                    flex-wrap: wrap;
-                    margin: 10px;
-                    height: 20rem;
-                    width: 20rem;
-                }
-
-            }
-            form {
-                width: 700px;
-                height: 300px;
-
-                .btn {
-                    width: 15%;
-                    border: 0.3rem solid black;
-                    font-size: 2rem;
-                }
-            }
-
-            .form {
-                padding: 2%;
-                color: black;
-                background-color: #f3dfa2;
-                font-size: 2.5rem;
-            }
-
-            .formName {
-                margin: 10px;
-
-                input {
-                    height: 40px;
-                    width: 100%;
-                    padding: 10px;
-                    margin: 0;
-                    box-sizing: border-box;
-                }
-            }
-
-            .remeras {
-                img {
-                    margin: 10px;
-                    width: 30rem;
-                    height: 30rem;
-                }
-
-                p {
-                    font-size: 2rem;
-                    text-align: center;
-                    color: black;
-                    background-color: #7ebdc2;
-                }
-            }
-
-            .zapatillas {
-                img {
-                    margin: 10px;
-                    width: 30rem;
-                    height: 30rem;
-                }
-
-                p {
-                    font-size: 2rem;
-                    text-align: center;
-                    color: black;
-                    background-color: #7ebdc2;
-                }
-            }
-
-            .texto {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                font-size: 3rem;
-                color: white;
-                letter-spacing: 0.1rem;
-            }
-
-            .contImgSlog {
-                position: relative;
-                display: inline-block;
-                text-align: center;
-                height: 100vh;
-            }
+            position: relative;
         }
 
-        footer {
-            grid-area: footer;
-            display: flex;
-            justify-content: center;
-
-            .fooContacto {
-                margin: 15%;
-            }
-
-            p {
-                font-size: 2rem;
-                margin: 5%;
-                background-color: #7ebdc2;
-                color: black;
-            }
-        }
     }
 }
