@@ -1,15 +1,41 @@
+/* Incluyo extends*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Amatic SC'; }
+
+/*Agrego mapas*/
+main {
+  display: flex; }
+  main .mainProd img {
+    flex-wrap: flex-wrap; }
+
+/*Incluyo mixin*/
+.sizeTextPrice {
+  font-size: 2rem;
+  text-align: center; }
+
+/*Agrego variables*/
+body .contenedor header {
+  letter-spacing: 3rem; }
+
+footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center; }
+  footer .fooContacto {
+    margin: 15%; }
+  footer p {
+    font-size: 2rem;
+    margin: 5%;
+    color: black; }
+
 main {
   grid-area: main;
-  display: flex;
   flex-direction: row;
   justify-content: center;
   width: auto;
   margin: 5%; }
-  main .mainProd img {
-    flex-wrap: wrap;
-    margin: 10px;
-    height: 20rem;
-    width: 20rem; }
   main form {
     width: 700px;
     height: 300px; }
@@ -19,8 +45,6 @@ main {
       font-size: 2rem; }
   main .form {
     padding: 2%;
-    color: black;
-    background-color: #f3dfa2;
     font-size: 2.5rem; }
   main .formName {
     margin: 10px; }
@@ -55,39 +79,36 @@ main {
     transform: translate(-50%, -50%);
     font-size: 3rem;
     color: white;
-    letter-spacing: 0.1rem; }
+    letter-spacing: 0.10rem;
+    font-weight: 900; }
   main .contImgSlog {
     position: relative;
     display: inline-block;
     text-align: center;
-    height: 100vh; }
+    height: 120vh; }
+    main .contImgSlog img {
+      background-attachment: fixed; }
   main .sizeTextCard {
     font-size: 2.5rem;
-    text-align: center; }
-  main .sizeTextPrice {
-    font-size: 2rem;
     text-align: center; }
   main .marginCard {
     display: flex;
     align-items: flex-start; }
 
-footer {
-  grid-area: footer;
-  display: flex;
-  justify-content: center; }
-  footer .fooContacto {
-    margin: 15%; }
-  footer p {
-    font-size: 2rem;
-    margin: 5%;
-    background-color: #7ebdc2;
-    color: black; }
+/*Incluyo operaciones*/
+header h1 {
+  font-size: 5rem; }
 
-/*extends*/
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Amatic SC'; }
+/*Agrego lists*/
+body .contenedor nav ul li a {
+  color: black; }
+
+body .contenedor main form .form {
+  color: black;
+  background-color: #f3dfa2; }
+
+body .contenedor footer p {
+  background-color: #7ebdc2; }
 
 body {
   background-color: white; }
@@ -109,9 +130,7 @@ body {
         width: 60%; }
       body .contenedor header h1 {
         text-align: center;
-        font-size: 5rem;
-        color: white;
-        letter-spacing: 1rem; }
+        color: white; }
     body .contenedor nav {
       grid-area: nav;
       display: flex;
@@ -124,12 +143,11 @@ body {
         list-style: none; }
         body .contenedor nav ul li a {
           text-decoration: none;
-          color: black;
           border-radius: 10%;
           margin: 5rem;
           font-size: 3rem;
           background-color: #7ebdc2;
           font-weight: 600; }
-    body .contenedor .navProducts {
+    body .contenedor .navStatic {
       display: flex;
       position: relative; }

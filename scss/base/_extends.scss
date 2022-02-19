@@ -1,10 +1,10 @@
-/*extends*/
-%restartPages{
+/* Incluyo extends*/
+%restartPages {
     margin: 0;
     padding: 0;
     font-family: 'Amatic SC';
 }
 
-*{
+* {
     @extend %restartPages;
 }

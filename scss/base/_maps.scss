@@ -1,0 +1,16 @@
+/*Agrego mapas*/
+$commonStyles: (displayCommon: flex,
+    heightCommon: 20rem,
+    widthCommon:20 rem,
+    flexCommon:flex-wrap,
+);
+
+main {
+    display: map-get($map:$commonStyles, $key:displayCommon);
+
+    .mainProd {
+        img {
+            flex-wrap: map-get($map: $commonStyles, $key:flexCommon);
+        }
+    }
+}

@@ -1,9 +1,11 @@
-@import "variables";
-@import "main";
-@import "footer";
-@import "extends";
-
-
+@import "base/extends";
+@import "base/maps";
+@import "base/mixin";
+@import "base/variables";
+@import "components/footer";
+@import "components/main";
+@import "base/operaciones";
+@import "base/lists";
 
 body {
     background-color: $color-body;
@@ -33,9 +35,7 @@ body {
 
             h1 {
                 text-align: center;
-                font-size: 5rem;
                 color: $color-header-h1;
-                letter-spacing: 1rem;
             }
         }
 
@@ -54,7 +54,6 @@ body {
                 li {
                     a {
                         text-decoration: none;
-                        color: black;
                         border-radius: 10%;
                         margin: 5rem;
                         font-size: 3rem;
@@ -65,7 +64,7 @@ body {
             }
             
         }
-        .navProducts{
+        .navStatic{
             display: flex;
             position: relative;
         }

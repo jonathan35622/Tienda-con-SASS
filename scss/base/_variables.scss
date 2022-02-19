@@ -1,0 +1,15 @@
+$color-body:white;
+$color-header:black;
+$color-header-h1:white;
+$color-nav:#7ebdc2;
+$space:3rem;
+/*Agrego variables*/
+
+body {
+    .contenedor {
+        header {
+
+            letter-spacing: $space;
+        }
+    }
+}

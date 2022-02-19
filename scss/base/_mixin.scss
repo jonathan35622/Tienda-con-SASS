@@ -1,0 +1,9 @@
+/*Incluyo mixin*/
+@mixin sizeText($size) {
+    font-size: $size;
+    text-align: center;
+}
+
+.sizeTextPrice {
+    @include sizeText(2rem);
+}

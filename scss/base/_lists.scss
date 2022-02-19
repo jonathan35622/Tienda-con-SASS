@@ -1,0 +1,30 @@
+$colors:white, black,#7ebdc2,#f3dfa2 ;
+/*Agrego lists*/
+body{
+    .contenedor{
+        nav{
+            ul{
+                li{
+                    a{
+                       color:nth($colors, 2 ) 
+                    }
+                }
+            }
+        }
+
+        main{
+            form{
+                .form{
+                    color:nth($colors, 2 );
+                    background-color: nth($colors, 4 );
+                }
+            }
+        }
+
+        footer{
+            p{
+                background-color: nth($colors , 3 );
+            }
+        }
+    }
+}
