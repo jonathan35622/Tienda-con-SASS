@@ -1,97 +1,106 @@
-main {
-    grid-area: main;
-    flex-direction: row;
-    justify-content: center;
-    width: auto;
-    margin: 5%;
-
-    form {
-        width: 700px;
-        height: 300px;
-
-        .btn {
-            width: 15%;
-            border: 0.3rem solid black;
-            font-size: 2rem;
-        }
-    }
-
-    .form {
-        padding: 2%;
-        font-size: 2.5rem;
-    }
-
-    .formName {
-        margin: 10px;
-
-        input {
-            height: 40px;
-            width: 100%;
-            padding: 10px;
-            margin: 0;
-            box-sizing: border-box;
-        }
-    }
-
-    .remeras {
-        img {
-            margin: 10px;
-            width: 30rem;
-            height: 30rem;
-        }
-
-        p {
-            font-size: 2rem;
-            text-align: center;
-            color: black;
-            background-color: #7ebdc2;
-        }
-    }
-
-    .zapatillas {
-        img {
-            margin: 10px;
-            width: 30rem;
-            height: 30rem;
-        }
-
-        p {
-            font-size: 2rem;
-            text-align: center;
-            color: black;
-            background-color: #7ebdc2;
-        }
-    }
-
-    .texto {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 3rem;
-        color: white;
-        letter-spacing: 0.10rem;
-        font-weight: 900;
-    }
-
-    .contImgSlog {
-        position: relative;
-        display: inline-block;
-        text-align: center;
-        height: 120vh;
-       img{
-        background-attachment: fixed;
-       }
+body{
+    .contenedor{
+        main {
+            grid-area: main;
+            flex-direction: row;
+            justify-content: center;
+            width: auto;
+            margin: 5%;
+            .tSize{
+                flex-wrap: wrap;
+            }
+            form {
+                width: 700px;
+                height: 300px;
         
-    }
+                .btn {
+                    width: 15%;
+                    border: 0.3rem solid black;
+                    font-size: 2rem;
+                }
+            }
+        
+            .form {
+                padding: 2%;
+                font-size: 2.5rem;
+            }
+        
+            .formName {
+                margin: 10px;
+        
+                input {
+                    height: 40px;
+                    width: 100%;
+                    padding: 10px;
+                    margin: 0;
+                    box-sizing: border-box;
+                }
+            }
+        
+            .remeras {
+                img {
+                    margin: 10px;
+                    width: 30rem;
+                    height: 30rem;
+                }
+        
+                p {
+                    font-size: 2rem;
+                    text-align: center;
+                    color: black;
+                    background-color: #7ebdc2;
+                }
+            }
+        
+            .zapatillas {
+                img {
+                    margin: 10px;
+                    width: 30rem;
+                    height: 30rem;
+                }
+        
+                p {
+                    font-size: 2rem;
+                    text-align: center;
+                    color: black;
+                    background-color: #7ebdc2;
+                }
+            }
+        
+            .texto {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 3rem;
+                color: white;
+                letter-spacing: 0.10rem;
+                font-weight: 900;
+            }
+        
+            .contImgSlog {
+                position: relative;
+                display: inline-block;
+                text-align: center;
+                height: 120vh;
+               img{
+                background-attachment: fixed;
+               }
+                
+            }
+           
+            .sizeTextCard {
+                font-size: 2.5rem;
+                text-align: center;
+            }
+        
+            .marginCard {
+                display: flex;
+                align-items: flex-start;
+            }
 
-    .sizeTextCard {
-        font-size: 2.5rem;
-        text-align: center;
-    }
-
-    .marginCard {
-        display: flex;
-        align-items: flex-start;
+            
+        }
     }
 }
+

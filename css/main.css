@@ -19,60 +19,62 @@ main {
 body .contenedor header {
   letter-spacing: 3rem; }
 
-footer {
+body .contenedor footer {
   grid-area: footer;
   display: flex;
   justify-content: center; }
-  footer .fooContacto {
+  body .contenedor footer .fooContacto {
     margin: 15%; }
-  footer p {
+  body .contenedor footer p {
     font-size: 2rem;
     margin: 5%;
     color: black; }
 
-main {
+body .contenedor main {
   grid-area: main;
   flex-direction: row;
   justify-content: center;
   width: auto;
   margin: 5%; }
-  main form {
+  body .contenedor main .tSize {
+    flex-wrap: wrap; }
+  body .contenedor main form {
     width: 700px;
     height: 300px; }
-    main form .btn {
+    body .contenedor main form .btn {
       width: 15%;
       border: 0.3rem solid black;
       font-size: 2rem; }
-  main .form {
+  body .contenedor main .form {
     padding: 2%;
     font-size: 2.5rem; }
-  main .formName {
+  body .contenedor main .formName {
     margin: 10px; }
-    main .formName input {
+    body .contenedor main .formName input {
       height: 40px;
       width: 100%;
       padding: 10px;
       margin: 0;
       box-sizing: border-box; }
-  main .remeras img {
+  body .contenedor main .remeras img {
     margin: 10px;
     width: 30rem;
     height: 30rem; }
-  main .remeras p {
+  body .contenedor main .remeras p {
     font-size: 2rem;
     text-align: center;
     color: black;
     background-color: #7ebdc2; }
-  main .zapatillas img {
+  body .contenedor main .zapatillas img {
     margin: 10px;
     width: 30rem;
     height: 30rem; }
-  main .zapatillas p {
+  body .contenedor main .zapatillas p {
     font-size: 2rem;
     text-align: center;
     color: black;
     background-color: #7ebdc2; }
-  main .texto {
+  body .contenedor main .texto {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -81,17 +83,17 @@ main {
     color: white;
     letter-spacing: 0.10rem;
     font-weight: 900; }
-  main .contImgSlog {
+  body .contenedor main .contImgSlog {
     position: relative;
     display: inline-block;
     text-align: center;
     height: 120vh; }
-    main .contImgSlog img {
+    body .contenedor main .contImgSlog img {
       background-attachment: fixed; }
-  main .sizeTextCard {
+  body .contenedor main .sizeTextCard {
     font-size: 2.5rem;
     text-align: center; }
-  main .marginCard {
+  body .contenedor main .marginCard {
     display: flex;
     align-items: flex-start; }
 
@@ -110,14 +112,70 @@ body .contenedor main form .form {
 body .contenedor footer p {
   background-color: #7ebdc2; }
 
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+  body .container-fluid .contenedor {
+    display: grid;
+    grid-template-areas: "header header" "nav nav " "main main" "footer footer"; }
+    body .container-fluid .contenedor header {
+      grid-area: header;
+      width: 50%; }
+      body .container-fluid .contenedor header .logo {
+        display: none; }
+      body .container-fluid .contenedor header h1 {
+        letter-spacing: 1rem;
+        font-size: 2rem;
+        text-align: center; }
+    body .container-fluid .contenedor main {
+      grid-area: main;
+      display: flex;
+      flex-direction: column; }
+      body .container-fluid .contenedor main .mainProd {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly; }
+      body .container-fluid .contenedor main .remeras {
+        width: 46%;
+        align-items: center; }
+        body .container-fluid .contenedor main .remeras p {
+          text-align: center; }
+      body .container-fluid .contenedor main .zapatillas {
+        width: 46%;
+        align-items: center; }
+      body .container-fluid .contenedor main .sizeCarousel {
+        width: 10%; }
+      body .container-fluid .contenedor main form .form {
+        width: 60%; }
+      body .container-fluid .contenedor main form .btn {
+        margin: 1%;
+        width: 20%; }
+      body .container-fluid .contenedor main .texto {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1rem;
+        color: white;
+        letter-spacing: 0.10rem;
+        font-weight: 700; }
+    body .container-fluid .contenedor footer {
+      grid-area: footer;
+      width: 50%;
+      margin: 2%;
+      justify-content: center; }
+      body .container-fluid .contenedor footer .tituloFooter {
+        text-align: center;
+        margin: 1rem; }
+      body .container-fluid .contenedor footer .fooContacto {
+        margin: 27%; } }
+
 body {
   background-color: white; }
-  body .contenedor {
+  body .container-fluid .contenedor {
     display: grid;
     height: 100vh;
     grid-template-areas: "header header" "nav nav " "main main" "footer footer";
     grid-template-rows: 1fr 1fr 1fr 1fr; }
-    body .contenedor header {
+    body .container-fluid .contenedor header {
       grid-area: header;
       display: flex;
       justify-content: center;
@@ -125,29 +183,26 @@ body {
       margin-bottom: 0;
       background-color: black;
       padding: 1%; }
-      body .contenedor header .logo {
+      body .container-fluid .contenedor header .logo {
         border-radius: 50%;
         width: 60%; }
-      body .contenedor header h1 {
+      body .container-fluid .contenedor header h1 {
         text-align: center;
         color: white; }
-    body .contenedor nav {
+    body .container-fluid .contenedor nav {
       grid-area: nav;
       display: flex;
       justify-content: center;
-      background-color: #7ebdc2;
-      position: sticky;
-      top: 0; }
-      body .contenedor nav ul {
+      background-color: #7ebdc2; }
+      body .container-fluid .contenedor nav ul {
         display: flex;
         list-style: none; }
-        body .contenedor nav ul li a {
+        body .container-fluid .contenedor nav ul li a {
           text-decoration: none;
           border-radius: 10%;
           margin: 5rem;
-          font-size: 3rem;
-          background-color: #7ebdc2;
-          font-weight: 600; }
-    body .contenedor .navStatic {
+          font-size: 3em;
+          font-weight: 400; }
+    body .container-fluid .contenedor .navStatic {
       display: flex;
       position: relative; }

@@ -1,0 +1,101 @@
+@media only screen and (max-width: 768px) and (min-width:576px) {
+
+    body {
+        .container-fluid{
+            .contenedor {
+                display: grid;
+                grid-template-areas: "header header"
+                    "nav nav "
+                    "main main"
+                    "footer footer";
+    
+                header {
+                    grid-area: header;
+                    width: 50%;
+    
+                    .logo {
+                        display: none;
+                    }
+    
+                    h1 {
+                        letter-spacing: 1rem;
+                        font-size: 2rem;
+                        text-align: center;
+                    }
+                } 
+    
+                main {
+    
+                    grid-area: main;
+                    display: flex;
+                    flex-direction: column;
+    
+                    .mainProd {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                    }
+    
+                    .remeras {
+                        width: 46%;
+                        align-items: center;
+    
+                        p {
+                            text-align: center;
+                        }
+                    }
+    
+                    .zapatillas {
+                        width: 46%;
+                        align-items: center;
+                    }
+    
+                    .sizeCarousel {
+                        width: 10%;
+                    }
+    
+                    form {
+                        .form {
+                            width: 60%;
+                        }
+    
+                        .btn {
+                            margin: 1%;
+                            width: 20%;
+                        }
+                    }
+                    .texto {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        font-size: 1rem;
+                        color: white;
+                        letter-spacing: 0.10rem;
+                        font-weight: 700;
+                    }
+                }
+    
+                footer {
+                    grid-area: footer;
+                    width: 50%;
+                    margin: 2%;
+                    justify-content: center;
+    
+                    .tituloFooter {
+                        text-align: center;
+                        margin: 1rem;
+                    }
+    
+                    .fooContacto{
+                        margin: 27%;
+                    }
+    
+                   
+    
+                }
+            }
+        }
+       
+    }
+}

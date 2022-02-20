@@ -1,15 +1,21 @@
-footer {
-    grid-area: footer;
-    display: flex;
-    justify-content: center;
-
-    .fooContacto {
-        margin: 15%;
-    }
-
-    p {
-        font-size: 2rem;
-        margin: 5%;
-        color: black;
+body{
+    .contenedor{
+        footer {
+            grid-area: footer;
+            display: flex;
+            justify-content: center;
+        
+            .fooContacto {
+                margin: 15%;
+            }
+        
+            p {
+                font-size: 2rem;
+                margin: 5%;
+                color: black;
+            }
+        }
     }
 }
+
+
