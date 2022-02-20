@@ -132,7 +132,7 @@ body .contenedor footer p {
       body .container-fluid .contenedor nav .navegacion {
         width: 50%;
         height: 1%;
-        margin: 1px; }
+        margin: 0px; }
       body .container-fluid .contenedor nav .menu ul {
         margin: 0;
         width: 72%;
@@ -145,26 +145,48 @@ body .contenedor footer p {
         body .container-fluid .contenedor nav .menu li a {
           display: block;
           padding: 10px 5px;
-          font-size: 1rem;
+          font-size: 1.5rem;
           margin: 0;
           padding-left: 0%;
           margin-left: 0; }
     body .container-fluid .contenedor main {
       grid-area: main;
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      margin-top: 10px;
+      padding: 0; }
+      body .container-fluid .contenedor main .padMain {
+        justify-content: end; }
       body .container-fluid .contenedor main .mainProd {
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly; }
+        justify-content: space-evenly;
+        padding: 0%; }
       body .container-fluid .contenedor main .remeras {
-        width: 46%;
-        align-items: center; }
+        align-items: center;
+        margin: 2%;
+        height: 300px;
+        padding-bottom: 2px; }
+        body .container-fluid .contenedor main .remeras img {
+          height: 60%;
+          width: 60%; }
         body .container-fluid .contenedor main .remeras p {
-          text-align: center; }
+          text-align: center;
+          font-size: 1.5rem;
+          width: 60%; }
       body .container-fluid .contenedor main .zapatillas {
-        width: 46%;
-        align-items: center; }
+        height: 300px;
+        margin: 2%; }
+        body .container-fluid .contenedor main .zapatillas img {
+          height: 60%;
+          width: 60%; }
+        body .container-fluid .contenedor main .zapatillas p {
+          text-align: center;
+          font-size: 1.5rem;
+          width: 60%;
+          margin: 0; }
+      body .container-fluid .contenedor main .contImgSlog {
+        width: 80vh; }
       body .container-fluid .contenedor main .sizeCarousel {
         width: 10%; }
       body .container-fluid .contenedor main form .form {
@@ -181,16 +203,141 @@ body .contenedor footer p {
         color: white;
         letter-spacing: 0.10rem;
         font-weight: 700; }
+      body .container-fluid .contenedor main .sizeTextCard {
+        font-size: 1rem;
+        text-align: center; }
+      body .container-fluid .contenedor main .marginCard {
+        display: flex;
+        align-items: flex-end;
+        width: 70%; }
     body .container-fluid .contenedor footer {
       grid-area: footer;
-      width: 50%;
-      margin: 2%;
-      justify-content: center; }
+      display: flex;
+      width: 80%;
+      padding: auto;
+      margin-top: 1%; }
       body .container-fluid .contenedor footer .tituloFooter {
         text-align: center;
         margin: 1rem; }
       body .container-fluid .contenedor footer .fooContacto {
-        margin: 27%; } }
+        margin: 27%; }
+      body .container-fluid .contenedor footer p {
+        margin-top: 0;
+        text-align: center;
+        font-size: 1.5rem; } }
+
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
+  .container-fluid .contenedor {
+    display: grid;
+    grid-template-areas: "header header" "nav nav " "main main" "footer footer";
+    height: 80%; }
+    .container-fluid .contenedor header {
+      grid-area: header;
+      width: 100%;
+      height: 85%; }
+      .container-fluid .contenedor header .logo {
+        border-radius: 100%;
+        width: 20%;
+        height: 10%; }
+        .container-fluid .contenedor header .logo img {
+          height: 1%; }
+      .container-fluid .contenedor header h1 {
+        letter-spacing: 2rem;
+        font-size: 2rem;
+        text-align: center; }
+    .container-fluid .contenedor nav {
+      width: 100%; }
+      .container-fluid .contenedor nav .navegacion {
+        width: 50%; }
+      .container-fluid .contenedor nav .menu ul {
+        margin: 0;
+        width: 72%;
+        height: 30%; }
+      .container-fluid .contenedor nav .menu li {
+        position: relative;
+        display: inline-block;
+        width: 80px;
+        margin: 40px;
+        margin-top: 0%;
+        margin-bottom: 0%; }
+        .container-fluid .contenedor nav .menu li a {
+          display: block;
+          padding: 2px;
+          font-size: 1.5rem;
+          margin: 0;
+          padding-left: 0%;
+          margin-left: 0; }
+    .container-fluid .contenedor main {
+      grid-area: main;
+      display: flex;
+      flex-direction: row;
+      height: 60%; }
+      .container-fluid .contenedor main .padMain {
+        height: 50%; }
+      .container-fluid .contenedor main .mainProd {
+        display: flex;
+        flex-direction: column;
+        padding: 0%; }
+      .container-fluid .contenedor main .remeras {
+        height: auto; }
+        .container-fluid .contenedor main .remeras img {
+          height: 50%; }
+        .container-fluid .contenedor main .remeras p {
+          text-align: center;
+          font-size: 1.5rem;
+          width: 100%; }
+      .container-fluid .contenedor main .zapatillas {
+        height: auto; }
+        .container-fluid .contenedor main .zapatillas img {
+          height: 50%; }
+        .container-fluid .contenedor main .zapatillas p {
+          text-align: center;
+          font-size: 1.5rem;
+          width: 100%;
+          margin: 0; }
+      .container-fluid .contenedor main .contImgSlog {
+        width: 80vh; }
+      .container-fluid .contenedor main .sizeCarousel {
+        width: 10%; }
+      .container-fluid .contenedor main form .form {
+        width: 100%; }
+      .container-fluid .contenedor main form .btn {
+        margin: 1%;
+        font-size: 1rem;
+        width: 15%; }
+      .container-fluid .contenedor main .texto {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1rem;
+        color: white;
+        letter-spacing: 0.10rem;
+        font-weight: 700; }
+      .container-fluid .contenedor main .sizeTextCard {
+        font-size: 1.5rem;
+        text-align: center; }
+      .container-fluid .contenedor main .marginCard {
+        display: flex;
+        align-items: flex-end;
+        width: 35%; }
+    .container-fluid .contenedor footer {
+      grid-area: footer;
+      display: flex;
+      width: 80%;
+      padding: auto;
+      margin-top: 1%; }
+      .container-fluid .contenedor footer .tituloFooter {
+        text-align: center;
+        margin: 1rem; }
+      .container-fluid .contenedor footer .pIndex {
+        display: none; }
+      .container-fluid .contenedor footer .fooContacto {
+        margin: 27%; }
+      .container-fluid .contenedor footer p {
+        margin-top: 0;
+        text-align: center;
+        font-size: 1.5rem; } }
 
 body {
   background-color: white; }
