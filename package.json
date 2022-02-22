@@ -1,7 +1,7 @@
 {
   "name": "sass-tienda-suarez-jonathan",
   "version": "1.0.0",
-  "description": "",
+  "description": "Proyecto de tienda online de venta de remeras y zapatillas ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
