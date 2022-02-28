@@ -1,0 +1,147 @@
+body {
+    .contenedorIndex {
+
+        display: grid;
+        height: 100vh;
+
+        grid-template-areas: "header header header "
+                            "nav    nav   nav  "
+                             "main    main     main  "
+                             "section section   section"
+                             "article  aside   aside"
+                             "footer   footer    footer";
+        grid-template-columns: 1fr 1fr 300px;    
+        grid-template-rows: 0.1fr 0,1fr 2fr 0.1fr 400px 500px;
+
+        .gridHeadI {
+            background-color: #519872;
+            grid-area: header;
+            display: flex;
+            justify-content: center;
+            padding: 0%;
+          
+            .logo {
+                justify-content: center;
+                border-radius: 50%;
+                width: 48%;
+            }
+            h1{
+             
+               font-size: 7rem;
+               color: white;
+               text-align: center;
+               letter-spacing: 3rem;
+            }
+
+
+
+        }
+
+        .gridNavI {
+            background-color: #34252F;
+            grid-area: nav;
+            display: flex;
+            justify-content: center;
+            ul {
+                display: flex;
+                list-style: none;
+
+                li {
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        border-radius: 10%;
+                        margin: 5rem;
+                        font-size: 4rem;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+
+       
+        .gridMainI {
+            background-color: white;
+            grid-area: main;
+            display: flex;
+            justify-content: center;
+           
+
+        }
+
+
+
+        .gridArticleI{
+        grid-area: article;
+        background-color: #34252F;
+        .imgenvio{
+            display: flex;
+            text-align: center;
+            align-items: center;
+            p{
+                color: white;
+                font-size: 2rem;
+                padding: 100px;
+
+            }
+           
+        }
+        }
+
+        .gridSectionI{
+            grid-area: section;
+            background-color: antiquewhite;
+            .movText{
+                font-size: 2rem;
+                font-weight: bold;
+            }
+
+        }
+
+
+        .gridAsideI {
+            background-color: #519872;
+            grid-area: aside;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .tarjCred{
+                p{
+                    color: white;
+                    font-size: 2rem;
+                }
+            }
+        }
+    
+        .gridFooI {
+            background-color: white;
+            grid-area: footer;
+            display: flex;
+            justify-content: center;
+            background-color: #A4B494;
+            .logoInst{
+                width: 10%;
+                padding: 1%;
+            }
+            .logWats{
+                width: 10%;
+                padding: 1%;
+            }
+            .logoTelg{
+                width: 10%;
+                padding: 1%;
+            }
+
+        }
+    
+
+    }
+
+    
+
+
+}
+
+
+
+

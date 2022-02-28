@@ -1,7 +1,7 @@
 @media only screen and (max-width: 768px) and (min-width:576px) {
 
     body {
-        .container-fluid {
+       
             .contenedor {
                 display: grid;
                 grid-template-areas: "header header"
@@ -179,13 +179,13 @@
                     }
                 }
             }
-        }
+        
 
     }
 }
 
 @media only screen and (max-width: 1200px) and (min-width:768px) {
-    .container-fluid{
+   
         .contenedor {
             display: grid;
             grid-template-areas: "header header"
@@ -360,6 +360,25 @@
                 }
             }
         }
-    }
+    
 
 }
+
+/*
+@media only screen and (max-width: 768px) and (min-width:576px) {
+   
+    body{
+        .contenedorProducts{
+            .gridMain{
+                grid-area: main;
+                .galleryContainer{
+                    grid-template-columns: repeat(1, 1fr);
+                }
+            }
+            
+        }
+    }
+    
+    
+}
+*/
