@@ -121,7 +121,7 @@
                                  "nav     nav    nav"
                                  "main    main   nav "
                                  "footer  footer footer";
-            grid-template-rows: 0.1fr 70px 68% 0px;
+            grid-template-rows: 0.1fr 70px 82% 0px;
     
             .gridHead {
                 background-color: #519872;
@@ -151,15 +151,15 @@
                 grid-area: nav;
                 display: flex;
                 justify-content: center;
-                background-color: #3B5249;
+                background-color: #34252F;
     
                 ul {
                     li {
                         a {
-                            font-size: 3rem;
+                            font-size: 2rem;
                             margin: 60px;
-                            color: black;
-                            font-weight: 600;
+                            color: white;
+                            font-weight: 400;
                         }
                     }
                 }

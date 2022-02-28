@@ -1,0 +1,374 @@
+@media only screen and (max-width: 768px) and (min-width:576px) {
+
+    body {
+        .contenedorTalles {
+            display: grid;
+            width: 100%;
+            grid-template-areas: "header header"
+                                 "nav     nav "
+                                 "section section"
+                                 "main    main "
+                                 "article article "
+                                 "footer  footer ";
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 0.1fr 50px 1fr 1fr 150px 120px;
+            .gridHeadT {
+                background-color: #519872;
+                grid-area: header;
+                display: flex;
+                justify-content: center;
+
+  
+                .sizeLogo{
+                    width: 20%;
+                }
+                .logo {
+                    margin: 0%;
+                    border-radius: 50%;
+                    width: 100%;              
+                }
+                h1 {
+                
+                    text-align: left;
+                    color: $color-header-h1;
+                    font-size: 4rem;
+                }
+    
+            }
+
+            .gridNavT {
+                grid-area: nav;
+                display: flex;
+                justify-content: center;
+                background-color: #3B5249;
+
+                ul {
+
+
+                    li {
+                        a {
+                            font-size: 2rem;
+                            margin: 30px;
+                            color: black;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+
+            .gridMainT {
+                background-color: white;
+                grid-area: main;
+                display: flex;
+                justify-content: center;
+
+            }
+
+            .gridArticleT {
+               
+                grid-area: article;
+                background-color: #34252F;
+                display: flex;
+                flex-direction: column;
+                display: none;
+                margin-bottom: 0%;
+
+                .despacho {
+                    display: flex;
+                    object-fit: cover;
+
+                    img {
+                        width: 10%;
+                    }
+
+                    p {
+                        font-size: 2rem;
+                        color: white;
+                    }
+                }
+
+                .tar {
+                    display: flex;
+
+                    img {
+                        width: 10%;
+                    }
+
+                    p {
+                        font-size: 2rem;
+                        color:white;
+                    }
+                }
+
+            }
+
+            .gridSectionT {
+                grid-area: section;
+                background-color: white;
+
+                .remeras {
+                    display: inline-block;
+
+                    h2 {
+                        font-size: 3rem;
+                        color: white;
+                        background-color: black;
+                        text-align: center;
+                    }
+
+                    p {
+                        font-size: 3rem;
+                    }
+                }
+
+                h1 {
+                    text-align: center;
+                    font-size: 3rem;
+                }
+
+                .talles {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .tableTalle {
+                        width: 50%;
+
+                        tr {
+                            th {
+                                font-size: 3rem;
+                            }
+
+                            td {
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+                }
+
+                .zapatillas {
+                    display: inline-block;
+
+                    h2 {
+                        font-size: 3rem;
+                        color: white;
+                        background-color: black;
+                        text-align: center;
+                    }
+                }
+
+                .medida {
+                    display: flex;
+                    justify-content: center;
+
+                    img {
+                        width: 11%;
+                    }
+                }
+            }
+
+
+            .gridFooT {
+                background-color: white;
+                grid-area: footer;
+                display: flex;
+                justify-content: center;
+                background-color: #A4B494;
+
+                .logoInst {
+                    width: 10%;
+                    padding: 1%;
+                }
+
+                .logWats {
+                    width: 10%;
+                    padding: 1%;
+                }
+
+                .logoTelg {
+                    width: 10%;
+                    padding: 1%;
+                }
+
+            }
+
+
+        }
+    }
+
+}
+
+
+
+@media only screen and (max-width: 1200px) and (min-width:768px) {
+
+    body{
+        .contenedorTalles {
+            display: grid;
+            grid-template-areas: "header header header"
+                                 "nav     nav    nav"
+                                 "section section section"
+                                 "main    main   main "
+                                 "article article article"
+                                 "footer  footer footer";
+                                 grid-template-rows: 0.2fr 0.1fr 1fr 0.1fr 300px ;
+    
+            .gridHeadT {
+                background-color: #519872;
+                grid-area: header;
+                display: flex;
+                justify-content: center;
+                padding: 0%;
+              
+                .logo {
+                    justify-content: center;
+                    border-radius: 50%;
+                    width: 38%;
+                }
+                h1{
+                 
+                   font-size: 5rem;
+                   color: white;
+                   text-align: center;
+                   letter-spacing: 1rem;
+                }
+            }
+    
+            .gridNavT {
+                background-color: #34252F;
+                grid-area: nav;
+                display: flex;
+                ul {    
+                    li {
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            margin: 60px;
+                            font-size: 2rem;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+            .gridMainT {
+                background-color: white;
+                grid-area: main;
+                display: flex;
+                justify-content: center;
+    
+            }
+
+            .gridArticleT{
+                grid-area: article;
+                background-color: white;
+                display: flex;    
+                .despacho{
+                    display: flex;
+                    object-fit: cover;
+                    img{
+                        width: 50%;
+                       
+
+                    }
+                    p{
+                        font-size: 2rem;
+                    }
+                }
+                .tar{
+                    display: flex;
+                    img{
+                        width: 50%;
+                    }
+                    p{
+                        font-size: 2rem;
+                    }
+                }
+        
+                }
+            .gridSectionT{
+                grid-area: section;
+                background-color: white;
+                .remeras{
+                    display: inline-block;
+                          
+                    h2{
+                        font-size: 3rem;
+                        color: white;
+                        background-color: black;
+                        text-align: center;
+                    }
+                    p{
+                        font-size: 3rem;
+                    }
+                }
+    
+                h1{
+                    text-align: center;
+                    font-size: 4rem;
+                }
+    
+                .talles{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .tableTalle{
+                        width: 50%;
+                        tr{
+                            th{
+                                font-size: 3rem;
+                            }
+                            td{
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+                }
+                .zapatillas{
+                    display: inline-block;
+    
+                    h2{
+                        font-size: 3rem;
+                        color: white;
+                        background-color: black;
+                        text-align: center;
+                    }
+                }
+                .medida{
+                    display: flex;
+                    justify-content: center;
+                    img{
+                        width: 11%;
+                    }
+                }
+            }
+
+    
+            .gridFooT {
+                background-color: white;
+                grid-area: footer;
+                display: flex;
+                justify-content: center;
+                background-color: #A4B494;
+                .logoInst{
+                    width: 10%;
+                    padding: 1%;
+                }
+                .logWats{
+                    width: 10%;
+                    padding: 1%;
+                }
+                .logoTelg{
+                    width: 10%;
+                    padding: 1%;
+                }
+    
+               
+            }
+        }
+
+    }
+    
+}
+
+
+

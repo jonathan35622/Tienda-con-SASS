@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,45 +25,86 @@
 
 <body>
 
-    <div class="contenedor">
-        <header>
-            <div>
-                <img src="../img/romLog.png" alt="" class="logo">
+    <div class="contenedorContacto">
+        <header class="gridHeadC">
+            <div class="sizeLogo">
+                <img src="../img/romLog.png" alt="ícono logo tienda" class="logo">
             </div>
             <div>
                 <h1 class="animate__animated animate__shakeY">Contacto</h1>
             </div>
         </header>
-        <nav class="navegacion">
-            <ul class="menu">
+        <nav class="gridNavC">
+            <ul>
                 <li> <a href="../index.html"> Home </a> </li>
                 <li> <a href="nosotros.html ">Nosotros </a></li>
                 <li> <a href="productos.html"> Productos</a></li>
-                <li> <a href="Novedades.html"> Novedades </a></li>
+                <li> <a href="talles.html"> Talles </a></li>
             </ul>
         </nav>
-        <main>
+        <main class="gridMainC">
             <form>
                 <fieldset class="form">
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <label for="exampleFormControlInput1" class="form-label email">Email</label>
                         <input type="email" class="form-control" id="exampleFormControlInput1"
                             placeholder="romulo@ejemplo.com">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleFormControlInput2" class="form-label">Nombre</label>
+                        <label for="exampleFormControlInput2" class="form-label name">Nombre</label>
                         <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="Romulo">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                        <label for="exampleFormControlTextarea1" class="form-label area">CONSULTA</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
                 </fieldset>
-                <button type="submit" class="btn btn-primary ">Submit</button>
+                <button type="submit" class="btn btn-primary ">Enviar</button>
             </form>
         </main>
-        <footer>
-            <p class="fooContacto "> No dudes en preguntar</p>
+
+        <article class="gridArticleC">
+            <div class="contact">
+                <img src="../img/email.png" alt="ícono email">
+                <p>tienda@Romulo.com</p>
+            </div>
+        </article>
+
+        <section class="gridSectionC">
+            <div class="medios">
+                <p>Medios de pago</p>
+            </div>
+            <div class="visa">
+                <img src="../img/visa.png" alt="ícono tarjeta visa">
+            </div>
+            <div class="maestro">
+                <img src="../img/maestro.png" alt="ícono tarjeta maestro">
+            </div>
+            <div class="transfer">
+                <img src="../img/transferencia-bancaria.png" alt="ícono transferencia bancaria">
+            </div>
+        </section>
+
+        <aside class="gridAsideC">
+            <div class="msj">
+                <p>
+                    Responderemos tus dudas lo más pronto posible, tu felicidad es
+                    nuestra prioridad!!
+                </p>
+            </div>
+        </aside>
+
+
+        <footer class="gridFooC">
+            <div class="logoInst">
+                <img src="../img/instagram.png" alt="Logo red social-Instagram" class="img-fluid">
+            </div>
+            <div class="logWats">
+                <img src="../img/whatsapp.png" alt="Logo red social-WhatsApp" class="img-fluid">
+            </div>
+            <div class="logoTelg">
+                <img src="../img/telegrama.png" alt="Logo red social- Telegram" class="img-fluid">
+            </div>
         </footer>
 
     </div>
@@ -73,5 +113,4 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
 </body>
-
 </html>

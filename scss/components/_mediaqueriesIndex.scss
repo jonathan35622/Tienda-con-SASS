@@ -5,7 +5,7 @@
         .contenedorIndex {
 
             display: grid;
- 
+            width: 100%;
             grid-template-areas: "header  header"
                                  "nav     nav"
                                  "main    main"
@@ -13,26 +13,29 @@
                                  "article article"
                                  "aside     aside"
                                  "footer   footer";
-             
-                                 grid-template-rows: 0.3fr 50px 28% 0px 400px;
+                                 grid-template-columns: 1fr 1fr; 
+                                 grid-template-rows: 0.3fr 50px 31% 0.1fr 180px 180px;
     
             .gridHeadI {
                 background-color: #519872;
                 grid-area: header;
                 display: flex;
                 justify-content: center;
+
   
+                .sizeLogo{
+                    width: 20%;
+                }
                 .logo {
-                    display: none;
                     margin: 0%;
                     border-radius: 50%;
-                    width: 100%; 
+                    width: 100%;              
                 }
-                h1{
-                    
+                h1 {
+                
+                    text-align: left;
                     color: $color-header-h1;
-                    letter-spacing: 0;
-                    font-size: 2rem;
+                    font-size: 4rem;
                 }
     
     
@@ -40,16 +43,20 @@
             }
     
             .gridNavI {
-                background-color: #34252F;
                 grid-area: nav;
                 display: flex;
-                ul {    
+                justify-content: center;
+                background-color: #3B5249;
+
+                ul {
+                 
+
                     li {
                         a {
-                            font-size: 1rem;
-                            margin: 10px;
-                            color: white;
-                            font-weight: 400;
+                            font-size: 2rem;
+                            margin: 30px;
+                            color: black;
+                            font-weight: 600;
                         }
                     }
                 }
@@ -72,15 +79,21 @@
             background-color: #34252F;
             display: flex;
             flex-direction: column;
+          
+            margin-bottom: 0%;
             .imgenvio{
                 display: flex;
-                text-align: center;
-                align-items: center;
+                
+                justify-content: flex-start;
+                align-items: flex-start;
+                img{
+                    width: 20%;
+                }
                 p{
                     color: white;
                     font-size: 2rem;
-                    padding: 100px;
-    
+                    padding: 25px;
+                   
                 } 
             }
             }
@@ -104,6 +117,9 @@
                 justify-content: center;
                 align-items: center;
                 .tarjCred{
+                    img{
+                        width: 20%;
+                    }
                     p{
                         color: white;
                         font-size: 1.5rem;
@@ -155,7 +171,7 @@
                                  "aside     aside     aside"
                                  "footer   footer    footer";
              
-            grid-template-rows: 0.2fr 0,1fr 1fr 0.1fr 300px 500px;
+            grid-template-rows: 0.2fr 0.1fr 1fr 0.1fr 300px 500px;
     
             .gridHeadI {
                 background-color: #519872;
