@@ -639,7 +639,7 @@ body .contenedorIndex {
     display: grid;
     width: 100%;
     grid-template-areas: "header  header" "nav     nav" "main    main" "section section" "article article" "aside     aside" "footer   footer";
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
     grid-template-rows: 0.3fr 50px 31% 0.1fr 180px 180px; }
     body .contenedorIndex .gridHeadI {
       background-color: #519872;
@@ -1240,7 +1240,7 @@ body .contenedorContacto {
   body .contenedorContacto {
     display: grid;
     height: 100vh;
-    grid-template-areas: "header header" "nav    nav  " "main    main " "section section  " "article  aside " "footer   footer ";
+    grid-template-areas: "header header" "nav    nav  " "main    main " "section section  " "article  article " "aside    aside" "footer   footer ";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.3fr 50px 1fr 180px 180px; }
     body .contenedorContacto .gridHeadC {
@@ -1261,11 +1261,11 @@ body .contenedorContacto {
     body .contenedorContacto .gridNavC {
       grid-area: nav;
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       background-color: #3B5249; }
       body .contenedorContacto .gridNavC ul li a {
         font-size: 2rem;
-        margin: 30px;
+        margin: 25px;
         color: black;
         font-weight: 600; }
     body .contenedorContacto .gridMainC {
@@ -1430,6 +1430,110 @@ body .contenedorContacto {
       align-items: center; }
       body .contenedorContacto .gridAsideC .msj p {
         font-size: 2rem;
+        color: black; }
+    body .contenedorContacto .gridFooC {
+      background-color: white;
+      grid-area: footer;
+      display: flex;
+      justify-content: center;
+      background-color: #A4B494; }
+      body .contenedorContacto .gridFooC .logoInst {
+        width: 10%;
+        padding: 1%; }
+      body .contenedorContacto .gridFooC .logWats {
+        width: 10%;
+        padding: 1%; }
+      body .contenedorContacto .gridFooC .logoTelg {
+        width: 10%;
+        padding: 1%; } }
+
+@media only screen and (max-width: 575px) and (min-width: 320px) {
+  body .contenedorContacto {
+    display: grid;
+    height: 100vh;
+    grid-template-areas: "header header" "nav    nav  " "main    main " "section section  " "article  article " "aside    aside" "footer   footer ";
+    grid-template-columns: auto auto;
+    grid-template-rows: 0.3fr 50px 1fr 180px 180px auto; }
+    body .contenedorContacto .gridHeadC {
+      background-color: #519872;
+      grid-area: header;
+      display: flex;
+      justify-content: center; }
+      body .contenedorContacto .gridHeadC .logo {
+        display: none; }
+      body .contenedorContacto .gridHeadC h1 {
+        text-align: left;
+        color: white;
+        font-size: 3rem; }
+    body .contenedorContacto .gridNavC {
+      grid-area: nav;
+      display: flex;
+      justify-content: flex-start;
+      background-color: #3B5249; }
+      body .contenedorContacto .gridNavC ul li a {
+        font-size: 1.5rem;
+        margin: 17px;
+        color: white;
+        font-weight: 400; }
+    body .contenedorContacto .gridMainC {
+      background-color: white;
+      grid-area: main;
+      display: flex;
+      justify-content: center; }
+      body .contenedorContacto .gridMainC form {
+        width: 90%; }
+        body .contenedorContacto .gridMainC form .email {
+          font-size: 1.5rem; }
+        body .contenedorContacto .gridMainC form .name {
+          font-size: 1.5rem; }
+        body .contenedorContacto .gridMainC form .area {
+          font-size: 1.5rem; }
+        body .contenedorContacto .gridMainC form .btn {
+          font-size: 1.5rem;
+          width: 19%; }
+    body .contenedorContacto .gridArticleC {
+      grid-area: article;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px; }
+      body .contenedorContacto .gridArticleC .contact p {
+        color: black;
+        font-size: 1.5rem;
+        font-weight: 800; }
+      body .contenedorContacto .gridArticleC .contact img {
+        width: 30%; }
+    body .contenedorContacto .gridSectionC {
+      grid-area: section;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 0%; }
+      body .contenedorContacto .gridSectionC .medios {
+        margin: 10px; }
+        body .contenedorContacto .gridSectionC .medios p {
+          font-size: 1.5rem;
+          font-weight: 600; }
+      body .contenedorContacto .gridSectionC .visa {
+        margin: 10px; }
+        body .contenedorContacto .gridSectionC .visa img {
+          width: 50%; }
+      body .contenedorContacto .gridSectionC .maestro {
+        margin: 10px; }
+        body .contenedorContacto .gridSectionC .maestro img {
+          width: 50%; }
+      body .contenedorContacto .gridSectionC .transfer img {
+        width: 50%; }
+    body .contenedorContacto .gridAsideC {
+      background-color: white;
+      grid-area: aside;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      body .contenedorContacto .gridAsideC .msj p {
+        font-size: 1rem;
         color: black; }
     body .contenedorContacto .gridFooC {
       background-color: white;
