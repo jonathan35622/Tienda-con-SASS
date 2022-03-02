@@ -864,7 +864,7 @@ body .contenedorIndex {
     width: 100%;
     grid-template-areas: "header  header" "nav     nav" "main    main" "section section" "article article" "aside     aside" "footer   footer";
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.3fr 50px 31% 0.1fr 100px 100px; }
+    grid-template-rows: 0.3fr 50px 31% 0.1fr 150px 150px 50px; }
     body .contenedorIndex .gridHeadI {
       background-color: #519872;
       grid-area: header;
