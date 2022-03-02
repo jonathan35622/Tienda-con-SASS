@@ -864,7 +864,7 @@ body .contenedorIndex {
     width: 100%;
     grid-template-areas: "header  header" "nav     nav" "main    main" "section section" "article article" "aside     aside" "footer   footer";
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.3fr 50px 31% 0.1fr 180px 180px; }
+    grid-template-rows: 0.3fr 50px 31% 0.1fr 100px 100px; }
     body .contenedorIndex .gridHeadI {
       background-color: #519872;
       grid-area: header;
@@ -1702,8 +1702,8 @@ body .contenedorContacto {
     display: grid;
     height: 100vh;
     grid-template-areas: "header header" "nav    nav  " "main    main " "section section  " "article  article " "aside    aside" "footer   footer ";
-    grid-template-columns: auto auto;
-    grid-template-rows: 0.3fr 50px 1fr 180px 180px auto; }
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 50px 1fr 180px 180px 50px 110px; }
     body .contenedorContacto .gridHeadC {
       background-color: #519872;
       grid-area: header;
@@ -2045,7 +2045,7 @@ body .contenedorNosotros {
     height: 100vh;
     grid-template-areas: "header header" "nav    nav " "main    main " "section section " "article  article " "footer   footer ";
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.1fr 50px 1fr 1fr 100px 50px; }
+    grid-template-rows: 0.1fr 50px 1fr 1fr 100px 120px; }
     body .contenedorNosotros .gridHeadN {
       background-color: #519872;
       grid-area: header;

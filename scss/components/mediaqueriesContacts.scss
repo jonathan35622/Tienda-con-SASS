@@ -379,9 +379,9 @@
                                  "article  article "
                                  "aside    aside"
                                  "footer   footer ";
-             grid-template-columns: auto auto; 
+             grid-template-columns: 1fr 1fr; 
                      
-            grid-template-rows: 0.3fr 50px 1fr 180px 180px auto;
+            grid-template-rows: 0.3fr 50px 1fr 180px 180px 50px 110px;
                   
     
             .gridHeadC {
