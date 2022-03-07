@@ -404,10 +404,7 @@ body .contenedorProducts {
       grid-gap: 10px; }
       body .contenedorProducts .gridMain .galleryContainer .galeryImg {
         width: 100%;
-        height: 100%;
         object-fit: cover; }
-      body .contenedorProducts .gridMain .galleryContainer .gallery:nth-child(3) {
-        grid-row-start: span 2; }
       body .contenedorProducts .gridMain .galleryContainer .gallery .galleryTitle {
         text-align: center;
         font-size: 2rem;
