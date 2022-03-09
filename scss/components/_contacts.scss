@@ -14,7 +14,7 @@ body {
         grid-template-rows: 0.1fr 0,1fr 2fr 0.1fr 400px 500px;
 
         .gridHeadC {
-            background-color: #519872;
+            background-color: black;
             grid-area: header;
             display: flex;
             justify-content: center;
@@ -45,8 +45,8 @@ body {
                         text-decoration: none;
                         color: white;
                         border-radius: 10%;
-                        margin: 5rem;
-                        font-size: 4rem;
+                        margin: 8rem;
+                        font-size: 2rem;
                         font-weight: 400;
                     }
                 }
@@ -81,14 +81,14 @@ body {
         }
         .gridArticleC{
         grid-area: article;
-        background-color: white;
+        background-color: black;
         display: flex;
         justify-content: center;
         align-items: center;
         .contact{
             p{
-                color: black;
-                font-size: 3rem;
+                color: white;
+                font-size: 2rem;
             }
             img{
                 width: 50%;
@@ -133,7 +133,7 @@ body {
 
         }
         .gridAsideC {
-            background-color: #519872;
+            background-color: black;
             grid-area: aside;
             display: flex;
             justify-content: center;
@@ -150,7 +150,7 @@ body {
             grid-area: footer;
             display: flex;
             justify-content: center;
-            background-color: #A4B494;
+            background-color: white;
             .logoInst{
                 width: 10%;
                 padding: 1%;
