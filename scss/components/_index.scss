@@ -10,8 +10,8 @@ body {
                              "section section   section"
                              "article  aside   aside"
                              "footer   footer    footer";
-        grid-template-columns: 1fr 1fr 300px;    
-        grid-template-rows: 0.1fr 0,1fr 2fr 0.1fr 400px 500px;
+        grid-template-columns: 1fr 1fr 1fr;    
+        grid-template-rows: 0.1fr 0,1fr 1fr 0.1fr 400px 500px;
 
         .gridHeadI {
             background-color: black;
@@ -45,7 +45,7 @@ body {
                         text-decoration: none;
                         color: white;
                         border-radius: 10%;
-                        margin: 8rem;
+                        margin: 6rem;
                         font-size: 2rem;
                         font-weight: 400;
                     }
@@ -94,7 +94,7 @@ body {
                 background-color: white;
                 grid-template-columns: repeat(3, 1fr);
                 grid-auto-rows: 350px;
-                padding: 110px;
+             //   padding: 110px;
                 grid-gap: 10px;
 
                 .galeryImg {

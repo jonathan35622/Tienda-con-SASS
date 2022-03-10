@@ -1,183 +1,160 @@
 @media only screen and (max-width: 768px) and (min-width:576px) {
     body {
         .contenedorNosotros {
-    
             display: grid;
             height: 100vh;
-    
             grid-template-areas: "header header"
-                                "nav    nav "
-                                 "main    main "
-                                 "section section "
-                                 "article  article "
-                                 "footer   footer ";
-            grid-template-columns: 1fr 1fr;     
+                "nav    nav "
+                "main    main "
+                "section section "
+                "article  article "
+                "footer   footer ";
+            grid-template-columns: 1fr 1fr;
             grid-template-rows: 0.1fr 50px 1fr 1fr 150px 100px;
-    
+
             .gridHeadN {
-                background-color: #519872;
+                background-color: black;
                 grid-area: header;
                 display: flex;
                 justify-content: center;
-
-  
-                .sizeLogo{
+                .sizeLogo {
                     width: 20%;
                 }
                 .logo {
                     margin: 0%;
                     border-radius: 50%;
-                    width: 100%;              
+                    width: 100%;
                 }
                 h1 {
-                
+
                     text-align: left;
                     color: $color-header-h1;
                     font-size: 4rem;
                 }
             }
-    
             .gridNavN {
                 grid-area: nav;
                 display: flex;
                 justify-content: center;
-                background-color: #3B5249;
-
+                background-color: #34252F;
                 ul {
-                 
-
                     li {
                         a {
                             font-size: 2rem;
                             margin: 30px;
-                            color: black;
-                            font-weight: 600;
+                            color: white;
+                            font-weight: 400;
                         }
                     }
                 }
             }
-            
-    
             .gridMainN {
-                background-color: #519872;
+                background-color: black;
                 grid-area: main;
                 display: flex;
                 justify-content: center;
-                .somos{
-                   img{
-                       width: 100%;
-                   }
-                  p{
-                      font-size: 2rem;
-                      text-align: center;
-                      color: white;
-                  }
+                .somos {
+                    img {
+                        width: 100%;
+                    }
+                    p {
+                        font-size: 2rem;
+                        text-align: center;
+                        color: white;
+                    }
                 }
-               
-    
             }
-            .gridArticleN{
-            grid-area: article;
-            background-color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-    
-            .red{
+
+            .gridArticleN {
+                grid-area: article;
+                background-color: white;
+                display: flex;
                 justify-content: center;
-                p{
-                    font-size: 2rem;
-                    
+                align-items: center;
+
+                .red {
+                    justify-content: center;
+
+                    p {
+                        font-size: 2rem;
+
+                    }
                 }
             }
-            
-           
-            }
-            .gridSectionN{
+            .gridSectionN {
                 grid-area: section;
                 background-color: white;
                 display: flex;
                 padding: 0%;
                 display: none;
-                
-                
-                .colaborar{
+                .colaborar {
                     margin: 9%;
-                    img{
+
+                    img {
                         width: 150%;
                     }
                 }
-            
             }
-            
-            .gridFooN{
+            .gridFooN {
                 background-color: white;
                 grid-area: footer;
                 display: flex;
                 justify-content: center;
-                background-color: #A4B494;
-                .logoInst{
+                background-color: white;
+                .logoInst {
                     width: 8%;
                     padding: 1%;
                 }
-                .logWats{
+                .logWats {
                     width: 8%;
                     padding: 1%;
                 }
-                .logoTelg{
+                .logoTelg {
                     width: 8%;
                     padding: 1%;
                 }
-    
+
             }
-    
+
         }
-    
+
     }
-
 }
-
 @media only screen and (max-width: 1200px) and (min-width:768px) {
     body {
         .contenedorNosotros {
-    
             display: grid;
             height: 100vh;
-    
             grid-template-areas: "header header header "
-                                "nav    nav   nav  "
-                                 "main    main     main  "
-                                 "section section   section"
-                                 "article  article   article"
-                                 "footer   footer    footer";
-            grid-template-rows: 0.2fr 0.1fr 1fr 0.1fr 300px ;
-    
+                "nav    nav   nav  "
+                "main    main     main  "
+                "section section   section"
+                "article  article   article"
+                "footer   footer    footer";
+            grid-template-rows: 0.2fr 0.1fr 1fr 0.1fr 300px;
             .gridHeadN {
-                background-color: #519872;
+                background-color: black;
                 grid-area: header;
                 display: flex;
                 justify-content: center;
                 padding: 0%;
-              
                 .logo {
                     justify-content: center;
                     border-radius: 50%;
                     width: 38%;
                 }
-                h1{
-                 
-                   font-size: 5rem;
-                   color: white;
-                   text-align: center;
-                   letter-spacing: 1rem;
+                h1 {
+                    font-size: 5rem;
+                    color: white;
+                    text-align: center;
+                    letter-spacing: 1rem;
                 }
             }
-    
             .gridNavN {
                 background-color: #34252F;
                 grid-area: nav;
                 display: flex;
-                ul {    
+                ul {
                     li {
                         a {
                             text-decoration: none;
@@ -189,122 +166,101 @@
                     }
                 }
             }
-            
-    
             .gridMainN {
-                background-color: #519872;
+                background-color: black;
                 grid-area: main;
                 display: flex;
                 justify-content: center;
-                .somos{
-                   img{
-                       width: 100%;
-                   }
-                  p{
-                      font-size: 3rem;
-                      text-align: center;
-                      color: white;
-                  }
+                .somos {
+                    img {
+                        width: 100%;
+                    }
+                    p {
+                        font-size: 3rem;
+                        text-align: center;
+                        color: white;
+                    }
                 }
-               
-    
             }
-            .gridArticleN{
-            grid-area: article;
-            background-color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-    
-            .red{
+
+            .gridArticleN {
+                grid-area: article;
+                background-color: white;
+                display: flex;
                 justify-content: center;
-                p{
-                    font-size: 2rem;
-                    
+                align-items: center;
+                .red {
+                    justify-content: center;
+
+                    p {
+                        font-size: 2rem;
+                    }
                 }
             }
-            
-           
-            }
-            .gridSectionN{
+            .gridSectionN {
                 grid-area: section;
                 background-color: white;
                 display: flex;
-                
                 justify-content: center;
-                
-               
-            
             }
-           
-            .gridFooN{
+            .gridFooN {
                 background-color: white;
                 grid-area: footer;
                 display: flex;
                 justify-content: center;
-                background-color: #A4B494;
-                .logoInst{
+                background-color: white;
+                .logoInst {
                     width: 8%;
                     padding: 1%;
                 }
-                .logWats{
+                .logWats {
                     width: 8%;
                     padding: 1%;
                 }
-                .logoTelg{
+                .logoTelg {
                     width: 8%;
                     padding: 1%;
                 }
-    
             }
-    
-        }
-    
-    }
 
+        }
+
+    }
 }
 
 @media only screen and (max-width: 575px) and (min-width:320px) {
     body {
         .contenedorNosotros {
-    
             display: grid;
             height: 100vh;
-    
             grid-template-areas: "header header"
-                                "nav    nav "
-                                 "main    main "
-                                 "section section "
-                                 "article  article "
-                                 "footer   footer ";
-            grid-template-columns: 1fr 1fr;     
+                "nav    nav "
+                "main    main "
+                "section section "
+                "article  article "
+                "footer   footer ";
+            grid-template-columns: 1fr 1fr;
             grid-template-rows: 0.1fr 50px 1fr 1fr 100px 120px;
-    
             .gridHeadN {
-                background-color: #519872;
+                background-color: black;
                 grid-area: header;
                 display: flex;
                 justify-content: center;
                 .logo {
-                    display: none;             
+                    display: none;
                 }
                 h1 {
-                
                     text-align: left;
                     color: $color-header-h1;
                     font-size: 3rem;
                 }
             }
-    
             .gridNavN {
                 grid-area: nav;
                 display: flex;
                 justify-content: center;
-                background-color: #3B5249;
-
+                background-color: #34252F;
                 ul {
-                 
-
                     li {
                         a {
                             font-size: 1.5rem;
@@ -315,82 +271,68 @@
                     }
                 }
             }
-            
-    
             .gridMainN {
-                background-color: #519872;
+                background-color: black;
                 grid-area: main;
                 display: flex;
                 justify-content: center;
-                .somos{
-                   img{
-                       width: 100%;
-                   }
-                  p{
-                      font-size: 1.5rem;
-                      text-align: center;
-                      color: white;
-                  }
+                .somos {
+                    img {
+                        width: 100%;
+                    }
+                    p {
+                        font-size: 1.5rem;
+                        text-align: center;
+                        color: white;
+                    }
                 }
-               
-    
             }
-            .gridArticleN{
-            grid-area: article;
-            background-color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-    
-            .red{
+
+            .gridArticleN {
+                grid-area: article;
+                background-color: white;
+                display: flex;
                 justify-content: center;
-                p{
-                    font-size: 1.5rem;
-                    
+                align-items: center;
+                .red {
+                    justify-content: center;
+                    p {
+                        font-size: 1.5rem;
+
+                    }
                 }
             }
-            
-           
-            }
-            .gridSectionN{
+            .gridSectionN {
                 grid-area: section;
                 background-color: white;
                 display: flex;
                 justify-content: center;
-              
-                
-                
-                .colaborar{
+                .colaborar {
                     margin: 9%;
-                    img{
+                    img {
                         width: 100%;
                     }
                 }
-            
             }
-            
-            .gridFooN{
+            .gridFooN {
                 background-color: white;
                 grid-area: footer;
                 display: flex;
                 justify-content: center;
-                background-color: #A4B494;
-                .logoInst{
+                background-color: white;
+                .logoInst {
                     width: 8%;
                     padding: 1%;
                 }
-                .logWats{
+                .logWats {
                     width: 8%;
                     padding: 1%;
                 }
-                .logoTelg{
+                .logoTelg {
                     width: 8%;
                     padding: 1%;
                 }
-    
             }
-    
         }
-    
     }
 }
