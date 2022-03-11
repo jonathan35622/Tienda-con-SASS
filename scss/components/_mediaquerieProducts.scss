@@ -186,7 +186,7 @@
                 "main    main"
                 "footer  footer";
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 0.2fr 50px 1fr 100px;
+            grid-template-rows: 0.2fr 50px 1fr 50px;
             .gridHead {
                 background-color: black;
                 grid-area: header;
@@ -209,8 +209,8 @@
                 ul {
                     li {
                         a {
-                            font-size: 1.4rem;
-                            margin: 17px;
+                            font-size: 1.3rem;
+                            margin: 14px;
                             color: white;
                             font-weight: 400;
                         }
@@ -221,8 +221,9 @@
                 grid-area: main;
                 .galleryContainer {
                     display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                    grid-auto-rows: 300px;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-auto-rows: 200px;
+                    padding: 20px;
                     grid-gap: 10px;
                     .galeryImg {
                         width: 100%;
@@ -232,7 +233,7 @@
                     .gallery {
                         .galleryTitle {
                             text-align: center;
-                            font-size: 1;
+                            font-size: 1rem;
                             color: white;
                             background-color: black;
                         }

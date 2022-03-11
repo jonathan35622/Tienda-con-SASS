@@ -240,7 +240,7 @@
                 "article  article "
                 "footer   footer ";
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 0.1fr 50px 1fr 1fr 100px 120px;
+            grid-template-rows: 0.2fr 50px 1fr 1fr 100px 50px;
             .gridHeadN {
                 background-color: black;
                 grid-area: header;
@@ -263,7 +263,7 @@
                 ul {
                     li {
                         a {
-                            font-size: 1.5rem;
+                            font-size: 1.3rem;
                             margin: 10px;
                             color: white;
                             font-weight: 400;

@@ -447,21 +447,17 @@
                 display: flex;
                 justify-content: flex-start;
                 background-color: #34252F;
-
                 ul {
-
-
                     li {
                         a {
-                            font-size: 1.5rem;
-                            margin: 17px;
+                            font-size: 1.3rem;
+                            margin: 10px;
                             color: white;
                             font-weight: 400;
                         }
                     }
                 }
             }
-
             .gridMainC {
                 background-color: white;
                 grid-area: main;
@@ -470,37 +466,28 @@
 
                 form {
                     width: 90%;
-
                     .email {
                         font-size: 1.5rem;
                     }
-
                     .name {
                         font-size: 1.5rem;
                     }
-
                     .area {
                         font-size: 1.5rem;
                     }
-
                     .btn {
                         font-size: 1.5rem;
-                        width: 19%;
+                        width: 22%;
                     }
                 }
-
-
             }
-
             .gridArticleC {
-
                 grid-area: article;
                 background-color: white;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 margin: 10px;
-
                 .contact {
                     p {
                         color: black;
@@ -512,9 +499,7 @@
                         width: 30%;
                     }
                 }
-
             }
-
             .gridSectionC {
                 grid-area: section;
                 background-color: white;
@@ -522,16 +507,13 @@
                 justify-content: center;
                 align-items: center;
                 margin-bottom: 0%;
-
                 .medios {
                     margin: 10px;
-
                     p {
                         font-size: 1.5rem;
                         font-weight: 600;
                     }
                 }
-
                 .visa {
                     margin: 10px;
 
@@ -539,30 +521,24 @@
                         width: 50%;
                     }
                 }
-
                 .maestro {
                     margin: 10px;
-
                     img {
                         width: 50%;
                     }
                 }
-
                 .transfer {
                     img {
                         width: 50%;
                     }
                 }
-
             }
-
             .gridAsideC {
                 background-color: white;
                 grid-area: aside;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-
                 .msj {
                     p {
                         font-size: 1rem;
@@ -570,7 +546,6 @@
                     }
                 }
             }
-
             .gridFooC {
                 background-color: white;
                 grid-area: footer;
